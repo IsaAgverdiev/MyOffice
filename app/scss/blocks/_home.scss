@@ -1,0 +1,37 @@
+.home {
+
+	&__inner {
+		margin-top: 50px;
+
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__content { 
+		width: 50%;
+		padding-right: 30px;
+	}
+
+	&__content-discr {
+		margin-top: 17px;
+	}
+	.content-discr {
+		margin-top: 10px;
+	}
+
+	&__content-btn {
+		margin-top: 28px;
+	}
+
+	&__btn-primary {
+		margin-right: 40px;
+	}
+	&__img {
+		overflow: hidden;
+		img {
+			width: 100%;
+			height: auto;
+			object-fit: cover;
+		}
+	}
+}

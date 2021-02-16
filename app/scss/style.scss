@@ -1,6 +1,20 @@
 // Шрифты
 @import "fonts.scss";
 // Библиотеки
-@import "libs.scss";
+@import "_libs.scss";
 // Глобальные стили
 @import "global.scss";
+
+
+// header
+@import "blocks/header";
+// home
+@import "blocks/home";
+// about
+@import "blocks/about";
+// rent
+@import "blocks/rent&buy";
+// contacts
+@import "blocks/contacts";
+// contacts
+@import "blocks/footer";

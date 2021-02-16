@@ -1,0 +1,84 @@
+.about {
+
+	&__inner {
+		margin-top: 60px;
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: flex-end;
+
+	}
+
+	&__content {
+		margin-left: 75px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+
+	&__title {
+		line-height: 64px;
+		font-size: 56px;
+	}
+
+	&__content-discr {
+		font-size: 18px;
+		margin-top: 20px;
+	}
+
+	&__content-discr+&__content-discr {
+		margin-top: 10px;
+	}
+
+	&__gallery {
+		width: 100%;
+		margin-top: 10px;
+
+	}
+
+	&__gallery-img {
+		width: 100%;
+		height: auto;
+		object-fit: cover;
+	}
+
+	&__gallery-img+&__gallery-img {
+		margin-top: 50px;
+	}
+}
+
+.advantages {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-top: 40px;
+
+	&__item {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		max-width: 360px;
+	}
+	&__item+&__item{
+		margin-bottom: 20px;
+	}
+
+	&__item-icon {
+		max-width: 64px;
+		max-height: 64px;
+		margin-right: 20px;
+	}
+
+	&__item-title {
+		font-size: 20px;
+		line-height: 180%;
+	}
+
+	&__item-text {
+		font-size: 18px;
+		line-height: 140%;
+		font-weight: 300;
+		color: $dark-300;
+	}
+}
