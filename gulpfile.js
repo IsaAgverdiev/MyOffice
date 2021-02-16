@@ -41,6 +41,7 @@ function images () {
 function scripts() {
 	return src([
 		'node_modules/jquery/dist/jquery.js',
+		'node_modules/magnific-popup/dist/jquery.magnific-popup.js',
 		'app/js/main.js'
 	])
 	.pipe(concat('main.min.js'))
@@ -65,6 +66,7 @@ function styles() {
 function css() {
 	return src([
 		'node_modules/normalize.css/normalize.css',
+		'node_modules/magnific-popup/dist/magnific-popup.css',
 	])
 		.pipe(concat('_libs.scss'))
 		.pipe(dest('app/scss'))

@@ -8,7 +8,7 @@
 		position: relative;
 		left: 50%;
 	}
-	
+
 	&__inner {
 		display: flex;
 		align-items: flex-start;
@@ -17,32 +17,32 @@
 		font-weight: 400;
 		margin: 0 auto;
 		padding: 20px 20px 0px;
-		
+
 	}
+
 	&__map-content {
 		margin-top: 60px;
 		padding: 20px;
 		background-color: #fff;
-		
+		box-shadow: 0px 30px 50px rgba(0, 0, 0, 0.2);
 	}
-	
+
 	&__title {
 		margin: 70px 0px 30px 0px;
 	}
 
 	&__map-btn {
+		display: block;
 		margin-top: 20px;
 		width: 233px;
 		background-color: $secondary;
+
 		&:hover {
 			background-color: lighten($secondary, 10);
 		}
+
 		&:active {
 			background-color: darken($secondary, 10);
 		}
-	}
-
-	&__map-manager {
-		// padding-right: 80px;
 	}
 }
