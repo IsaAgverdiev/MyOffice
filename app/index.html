@@ -13,26 +13,36 @@
 	<header class="header">
 		<div class="header__outer">
 			<div class="header__inner">
-				<a href="" class="header__logo">
-					<img src="images/logo.svg" alt="logo">
-				</a>
-				<nav class="header__nav">
-					<ul class="header__nav-menu header__menu">
-						<li class="header__menu-item"><a href="#home">Главная</a></li>
-						<li class="header__menu-item"><a href="#about">О проекте</a></li>
-						<li class="header__menu-item"><a href="#rent">Аренда офиса</a></li>
-						<li class="header__menu-item"><a href="#buy">Купить офис</a></li>
-						<li class="header__menu-item"><a href="#contacts">Контакты</a></li>
-					</ul>
-				</nav>
-				<div class="header__tel">
-					<a href="tel:74957485700" class="header__tel-number">7 (495) 748 57 00</a>
-					<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path fill-rule="evenodd" clip-rule="evenodd"
-							d="M8.38989 8.38848C8.93144 7.84642 9.37897 7.26069 9.61645 6.78618C9.69442 6.63037 9.74292 6.49967 9.76422 6.40623L9.28389 5.92561C9.17852 5.82015 9.12787 5.76881 9.06239 5.7C8.92369 5.55423 8.80805 5.42102 8.70632 5.28393C8.24865 4.66719 8.07857 3.9958 8.62033 3.39123C9.64609 1.95638 10.3362 1.06892 10.7786 0.631902C11.6914 -0.269819 13.1787 -0.14902 13.9704 0.631012C14.3526 1.00766 14.4826 1.13753 14.8751 1.5362C17.1674 3.82966 15.8003 8.57107 12.1879 12.1868C8.57623 15.8019 3.83446 17.1699 1.53603 14.8703C1.17523 14.5225 0.866897 14.214 0.622938 13.9562C-0.149399 13.1399 -0.26602 11.7168 0.628825 10.787C1.05433 10.3449 1.90053 9.68827 3.39723 8.61748C3.9447 8.13212 4.58502 8.23741 5.15391 8.61061C5.41016 8.77872 5.59045 8.94313 5.92994 9.28294L6.40978 9.76302C6.5031 9.74172 6.63362 9.69326 6.78918 9.61536C7.26348 9.37783 7.84874 8.93014 8.38989 8.38848ZM5.11203 11.2925L4.51603 10.6962C4.41423 10.5943 4.33371 10.5157 4.26712 10.454C3.06036 11.3239 2.35419 11.8771 2.06899 12.1735C1.97203 12.2742 1.9899 12.4923 2.07487 12.5821C2.29546 12.8152 2.58313 13.103 2.93671 13.4441C4.24146 14.7492 7.83897 13.7114 10.7739 10.7737C13.7099 7.8349 14.7475 4.2364 13.456 2.94426C13.0655 2.54769 12.9427 2.42494 12.5675 2.0552C12.5079 1.99649 12.262 1.97652 12.1832 2.05431C11.8752 2.35859 11.2984 3.09371 10.4554 4.26293C10.4727 4.28177 10.491 4.30138 10.5104 4.32178C10.5611 4.37506 10.6039 4.41836 10.6979 4.51252L11.2936 5.10845C12.4404 6.25511 11.5303 8.07358 9.80393 9.80158C8.07854 11.5286 6.25882 12.4399 5.11203 11.2925Z"
-							fill="#15499F" />
-					</svg>
+				<h1 class="logo">
+					<a href="index.html" class="header__logo">
+						<img src="images/logo.svg" alt="logo">
+					</a>
+				</h1>
+				<button class="btn-burger">
+					<span class="btn-burger__line"></span>
+					<span class="btn-burger__line"></span>
+					<span class="btn-burger__line"></span>
+				</button>
+				<div class="header__nav-wrap">
+					<nav class="header__nav">
+						<ul class="header__nav-menu header__menu">
+							<li class="header__menu-item"><a href="#home">Главная</a></li>
+							<li class="header__menu-item"><a href="#about">О проекте</a></li>
+							<li class="header__menu-item"><a href="#rent">Аренда офиса</a></li>
+							<li class="header__menu-item"><a href="#buy">Купить офис</a></li>
+							<li class="header__menu-item"><a href="#contacts">Контакты</a></li>
+						</ul>
+					</nav>
+					<div class="header__tel">
+						<a href="tel:74957485700" class="header__tel-number">7 (495) 748 57 00</a>
+						<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd" clip-rule="evenodd"
+								d="M8.38989 8.38848C8.93144 7.84642 9.37897 7.26069 9.61645 6.78618C9.69442 6.63037 9.74292 6.49967 9.76422 6.40623L9.28389 5.92561C9.17852 5.82015 9.12787 5.76881 9.06239 5.7C8.92369 5.55423 8.80805 5.42102 8.70632 5.28393C8.24865 4.66719 8.07857 3.9958 8.62033 3.39123C9.64609 1.95638 10.3362 1.06892 10.7786 0.631902C11.6914 -0.269819 13.1787 -0.14902 13.9704 0.631012C14.3526 1.00766 14.4826 1.13753 14.8751 1.5362C17.1674 3.82966 15.8003 8.57107 12.1879 12.1868C8.57623 15.8019 3.83446 17.1699 1.53603 14.8703C1.17523 14.5225 0.866897 14.214 0.622938 13.9562C-0.149399 13.1399 -0.26602 11.7168 0.628825 10.787C1.05433 10.3449 1.90053 9.68827 3.39723 8.61748C3.9447 8.13212 4.58502 8.23741 5.15391 8.61061C5.41016 8.77872 5.59045 8.94313 5.92994 9.28294L6.40978 9.76302C6.5031 9.74172 6.63362 9.69326 6.78918 9.61536C7.26348 9.37783 7.84874 8.93014 8.38989 8.38848ZM5.11203 11.2925L4.51603 10.6962C4.41423 10.5943 4.33371 10.5157 4.26712 10.454C3.06036 11.3239 2.35419 11.8771 2.06899 12.1735C1.97203 12.2742 1.9899 12.4923 2.07487 12.5821C2.29546 12.8152 2.58313 13.103 2.93671 13.4441C4.24146 14.7492 7.83897 13.7114 10.7739 10.7737C13.7099 7.8349 14.7475 4.2364 13.456 2.94426C13.0655 2.54769 12.9427 2.42494 12.5675 2.0552C12.5079 1.99649 12.262 1.97652 12.1832 2.05431C11.8752 2.35859 11.2984 3.09371 10.4554 4.26293C10.4727 4.28177 10.491 4.30138 10.5104 4.32178C10.5611 4.37506 10.6039 4.41836 10.6979 4.51252L11.2936 5.10845C12.4404 6.25511 11.5303 8.07358 9.80393 9.80158C8.07854 11.5286 6.25882 12.4399 5.11203 11.2925Z"
+								fill="#15499F" />
+						</svg>
+					</div>
 				</div>
+				<!-- /.header__nav-wrap-->
 			</div>
 			<!-- /.header__inner-->
 		</div>
@@ -70,7 +80,7 @@
 			<div class="container">
 				<div class="about__inner">
 					<div class="about__content">
-						<h1 class="title about__title">О бизнес центре<br> W Плаза</h1>
+						<h1 class="title about__title">О бизнес центре W Плаза</h1>
 						<p class="about__content-discr">Бизнес центры W Plaza 1 и  W Plaza 2 образуют единый офисный комплекс
 							БЦ «W Плаза» на Варшавском шоссе Донском районе ЮАО округа, в нескольких минутах неспешной ходьбы
 							от станции
@@ -82,33 +92,30 @@
 						</p>
 						<div class="about__content-advantages advantages">
 							<div class="advantages__item">
-								<img class="advantages__item-icon" src="images/adv-11.svg" alt="icon">
 								<div>
 									<h2 class="advantages__item-title">Наземная парковка</h2>
 									<span class="advantages__item-text">426 авто с VIP-зоной</span>
 								</div>
 							</div>
 							<div class="advantages__item">
-								<img class="advantages__item-icon" src="images/adv-222.svg" alt="icon">
+								<div>
+									<h2 class="advantages__item-title">Передовые технологии</h2>
+									<span class="advantages__item-text">Централизованная вентиляция и кондиционирование</span>
+								</div>
+							</div>
+							<div class="advantages__item">
 								<div>
 									<h2 class="advantages__item-title">Охрана и ресепшн</h2>
 									<span class="advantages__item-text">с доступом аредодаторам и собственникам 24/7</span>
 								</div>
 							</div>
 							<div class="advantages__item">
-								<img class="advantages__item-icon" src="images/adv-3.svg" alt="icon">
 								<div>
 									<h2 class="advantages__item-title">Комфортная среда</h2>
 									<span class="advantages__item-text">Зоны отдыха и досуга.</span>
 								</div>
 							</div>
-							<div class="advantages__item">
-								<img class="advantages__item-icon" src="images/adv-4.svg" alt="icon">
-								<div>
-									<h2 class="advantages__item-title">Передовые технологии</h2>
-									<span class="advantages__item-text">Централизованная вентиляция и кондиционирование</span>
-								</div>
-							</div>
+
 						</div>
 						<!-- /.about__content-advantages -->
 					</div>
@@ -396,7 +403,8 @@
 					<div class="contacts__inner">
 						<div class="contacts__map-content">
 							<h2 class="title contacts__map-title">Давайте<br> созвонимся!</h2>
-							<a href="#test-form" class="btn__primary contacts__map-btn popup-with-form callback open-popup"	data-effect="mfp-zoom-in">Обратный звонок</a>
+							<a href="#test-form" class="btn__primary contacts__map-btn popup-with-form callback open-popup"
+								data-effect="mfp-zoom-in">Обратный звонок</a>
 						</div>
 						<img class="contacts__map-manager" src="images/manager.png" alt="manager">
 					</div>

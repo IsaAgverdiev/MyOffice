@@ -25,6 +25,11 @@
 		padding: 20px;
 		background-color: #fff;
 		box-shadow: 0px 30px 50px rgba(0, 0, 0, 0.2);
+
+		@media (max-width: $breakpoint-lg-max) {
+			margin-left: 100px;
+			padding: 50px;
+		}
 	}
 
 	&__title {

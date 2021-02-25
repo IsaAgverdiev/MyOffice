@@ -1,5 +1,4 @@
 .footer {
-
 	&__outer {
 		background-color: $primary;
 		width: 100vw;
@@ -19,14 +18,12 @@
 		margin: 0 auto;
 	}
 
-	&__logo {}
-
 	&__info {
 		display: flex;
 		flex-direction: column;
 	}
 
-	&__info-item+&__info-item {
+	&__info-item + &__info-item {
 		margin-top: 10px;
 	}
 
@@ -34,9 +31,9 @@
 		display: flex;
 		justify-content: flex-end;
 	}
-	
+
 	&__social-link {
-		transition: .2s;
+		transition: 0.2s;
 		&:hover {
 			rect {
 				fill: $primary-light;
@@ -47,17 +44,13 @@
 			}
 		}
 		&:active {
-			transform: scale(.97);
+			transform: scale(0.97);
 		}
 	}
-	
-	&__social-link+&__social-link {
+
+	&__social-link + &__social-link {
 		margin-left: 10px;
 	}
-
-	.facebook__link {}
-
-	.vk__link {}
 
 	.copyright__text {
 		display: block;

@@ -1,4 +1,16 @@
 @import "colors.scss";
+// breakpoints
+// $breakpoint-xs-min: 0px;
+$breakpoint-sm-min: 576px;
+$breakpoint-xs-max: $breakpoint-sm-min - 1px;
+$breakpoint-md-min: 768px;
+$breakpoint-sm-max: $breakpoint-md-min - 1px;
+$breakpoint-lg-min: 992px;
+$breakpoint-md-max: $breakpoint-lg-min - 1px;
+$breakpoint-xl-min: 1200px;
+$breakpoint-lg-max: $breakpoint-xl-min - 1px;
+$breakpoint-xxl-min: 1400px;
+$breakpoint-xl-max: $breakpoint-xxl-min - 1px;
 
 *,
 *::before,
@@ -40,11 +52,15 @@ body {
 	scroll-behavior: smooth;
 	text-rendering: optimizeSpeed;
 	line-height: 130%;
-	font-family: 'Inter', sans-serif;
+	font-family: "Inter", sans-serif;
 	font-size: 16px;
 	font-weight: 400;
 	overflow-x: hidden;
 	color: $dark;
+
+	@media (max-width: $breakpoint-lg-max) {
+		font-size: 14px;
+	}
 
 	&.noscroll {
 		overflow-y: hidden !important;
@@ -82,12 +98,24 @@ button:focus {
 	max-width: 1260px;
 	padding: 0px 20px;
 	margin: 0 auto;
+
+	@media (max-width: $breakpoint-md-max) {
+		max-width: 1024px;
+		padding: 0px 15px;
+	}
 }
 
 .title {
 	font-weight: bold;
-	font-size: 54px;
+	font-size: 52px;
 	line-height: 130%;
+
+	@media (max-width: 1212px) {
+		font-size: 36px;
+	}
+	@media (max-width: $breakpoint-lg-max) {
+		font-size: 30px;
+	}
 }
 
 .btn__primary,
@@ -97,7 +125,7 @@ button:focus {
 	background-color: $primary;
 	color: #fff;
 	text-align: center;
-	transition: .2s;
+	transition: 0.2s;
 	cursor: pointer;
 
 	&:hover {
@@ -125,7 +153,6 @@ button:focus {
 }
 
 .popup {
-
 	&__title {
 		font-size: 32px;
 		line-height: 100%;
@@ -167,7 +194,7 @@ button:focus {
 			}
 		}
 
-		&-input+&-input {
+		&-input + &-input {
 			margin-top: 20px;
 		}
 
@@ -194,7 +221,6 @@ button:focus {
 		}
 	}
 }
-
 
 .popup-with-form {
 	transition: 1s;
