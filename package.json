@@ -5,6 +5,7 @@
   "main": "index.js",
   "homepage": "https://isaagverdiev.github.io/MyOffice",
   "scripts": {
+    "predeploy": "gulp build",
     "deploy": "gh-pages -d dist"
   },
   "author": "Isa Agverdiev",
