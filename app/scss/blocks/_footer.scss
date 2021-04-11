@@ -16,14 +16,25 @@
 		font-weight: 400;
 		padding: 30px 20px;
 		margin: 0 auto;
+
+		@media (max-width: $breakpoint-xs-max) {
+			flex-direction: column;
+			align-items: center;
+		}
 	}
 
 	&__info {
 		display: flex;
 		flex-direction: column;
+
+		@media (max-width: $breakpoint-xs-max) {
+			margin-top: 20px;
+			margin-bottom: 20px;
+			align-items: center;
+		}
 	}
 
-	&__info-item + &__info-item {
+	&__info-item+&__info-item {
 		margin-top: 10px;
 	}
 
@@ -34,6 +45,7 @@
 
 	&__social-link {
 		transition: 0.2s;
+
 		&:hover {
 			rect {
 				fill: $primary-light;
@@ -43,12 +55,13 @@
 				fill: #fff;
 			}
 		}
+
 		&:active {
 			transform: scale(0.97);
 		}
 	}
 
-	&__social-link + &__social-link {
+	&__social-link+&__social-link {
 		margin-left: 10px;
 	}
 

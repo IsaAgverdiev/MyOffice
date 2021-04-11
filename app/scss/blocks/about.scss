@@ -1,18 +1,45 @@
 .about {
 
 	&__inner {
-		margin-top: 60px;
+		margin-top: 40px;
 		display: flex;
 		flex-direction: row-reverse;
 		justify-content: flex-end;
+
+		@media (max-width: $breakpoint-lg-max) {
+			margin-top: 40px;
 		}
+
+		@media (max-width: $breakpoint-md-max) {
+			flex-direction: column;
+		}
+
+		@media (max-width: $breakpoint-sm-min) {
+			margin-top: 20px;
+			flex-direction: column-reverse;
+		}
+
+	}
 
 	&__title {
 		margin-bottom: 40px;
+
+		@media (max-width: $breakpoint-lg-max) {
+			margin-bottom: 25px;
+		}
+
+		@media (max-width: $breakpoint-md-max) {
+			font-size: 32px;
+			margin-bottom: 10px;
+		}
+
+		@media (max-width: $breakpoint-md-max) {
+			font-size: 24px;
+			margin-bottom: 10px;
+		}
 	}
 
 	&__content {
-		margin: auto;
 		margin-left: 75px;
 		display: flex;
 		flex-direction: column;
@@ -20,50 +47,103 @@
 		@media (max-width: $breakpoint-lg-max) {
 			margin-left: 30px;
 		}
+
+		@media (max-width: $breakpoint-md-max) {
+			margin-left: 0;
+		}
+
 	}
 
 	&__content-discr+&__content-discr {
 		margin-top: 20px;
+
+		@media (max-width: $breakpoint-lg-max) {
+			margin-top: 10px;
+		}
 	}
 
 	&__gallery {
 		width: 100%;
 		margin-top: 10px;
 
+		@media (max-width: $breakpoint-md-max) {
+			display: flex;
+			margin-top: 20px;
+		}
+
+		@media (max-width: $breakpoint-sm-min) {
+			display: block;
+			margin-top: 0;
+			margin-bottom: 20px;
+		}
 	}
 
 	&__gallery-img {
-		width: 100%;
-		height: auto;
-		object-fit: cover;
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
 	}
 
 	&__gallery-img+&__gallery-img {
 		margin-top: 30px;
+
+		@media (max-width: $breakpoint-md-max) {
+			margin-top: 0;
+			margin-left: 15px;
+		}
+
+		@media (max-width: $breakpoint-sm-min) {
+			margin-top: 10px;
+			margin-left: 0;
+		}
 	}
 }
 
 .advantages {
 	display: grid;
-	grid-template-columns: (1fr 1fr);
-	grid-template-rows: (1fr 1fr);
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(2, 1fr);
 	grid-gap: 15px;
 	margin-top: 50px;
+
+	@media (max-width: $breakpoint-md-max) {
+		margin-top: 40px;
+	}
+
+	@media (max-width: $breakpoint-xs-max) {
+		display: flex;
+		flex-direction: column;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+
 
 	&__item {
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
 	}
-	&__item+&__item{
+
+	&__item+&__item {
 		margin-bottom: 20px;
+
+		@media (max-width: $breakpoint-md-max) {
+			margin-bottom: 0;
+		}
 	}
 
 	&__item-title {
 		font-size: 20px;
 		margin-bottom: 5px;
+
+		@media (max-width: $breakpoint-sm-min) {
+			font-size: 16px;
+			margin-bottom: 0;
+		}
 	}
-	
+
 
 	&__item-text {
 		font-size: 16px;
