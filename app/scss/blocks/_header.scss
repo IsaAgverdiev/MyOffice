@@ -1,5 +1,10 @@
 .header {
 	&__outer {
+		position: fixed;
+		top: 0;
+		right: 0;
+		left: 0;
+		z-index: 10;
 		width: 100%;
 		box-shadow: 0px 6px 15px 0px rgba(70, 70, 70, 0.2);
 		background-color: #fff;
@@ -13,6 +18,7 @@
 		max-width: 1260px;
 		font-weight: 400;
 		margin: 0 auto;
+		position: relative;
 	}
 
 	&__nav-wrap {
@@ -23,8 +29,31 @@
 		margin-left: 50px;
 
 		@media (max-width: $breakpoint-md-max) {
+			position: absolute;
+			top: 90px;
+			left: 0;
+			right: 0;
+			margin-left: 0;
+			padding-top: 10px;
+			height: 90px;
+			width: 100vw;
+			transform: translateX(-50%);
+			left: 50%;
+			background-color: #fff;
+			box-shadow: 0px 30px 50px 0px rgba(70, 70, 70, 0.2);
+			flex-direction: column;
 			display: none;
+
 		}
+
+		@media (max-width: $breakpoint-xs-max) {
+			height: 100vh;
+			justify-content: start;
+		}
+	}
+
+	&__nav-wrap--active {
+		display: flex;
 	}
 
 	.btn-burger {
@@ -41,6 +70,7 @@
 			background-color: $primary;
 
 			margin-top: 5px;
+
 			&:first-child {
 				margin-top: 0;
 			}
@@ -51,8 +81,21 @@
 		}
 	}
 
+	&__nav {
+		@media (max-width: $breakpoint-xs-max) {
+			width: 100%;
+		}
+	}
+
 	&__nav-menu {
 		display: flex;
+
+		@media (max-width: $breakpoint-xs-max) {
+
+			width: 100%;
+			flex-direction: column;
+			align-items: center;
+		}
 	}
 
 	&__menu-item {
@@ -64,16 +107,41 @@
 			color: $primary-light;
 			border-bottom: 1px solid $primary-light;
 		}
+
+		@media (max-width: $breakpoint-xs-max) {
+			width: 100%;
+			text-align: center;
+			padding: 15px 0;
+
+			&:hover {
+				color: $primary-light;
+				border-bottom: none;
+			}
+		}
 	}
 
-	&__menu-item + &__menu-item {
+	&__menu-item+&__menu-item {
 		margin-left: 40px;
+
+		@media (max-width: $breakpoint-xs-max) {
+			margin-left: 0;
+		}
+
+
 	}
 
 	&__tel {
 		display: flex;
 		align-items: center;
 		color: $primary;
+
+		@media (max-width: $breakpoint-md-max) {
+			padding-bottom: 25px;
+		}
+
+		@media (max-width: $breakpoint-xs-max) {
+			padding-top: 20px;
+		}
 	}
 
 	&__tel-number {
