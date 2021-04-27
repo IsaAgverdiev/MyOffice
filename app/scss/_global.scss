@@ -135,8 +135,9 @@ button:focus {
 	@media (max-width: $breakpoint-xs-max) {
 		font-size: 20px;
 	}
+
 	@media (max-width: $breakpoint-sm-min) {
-			font-size: 24px;
+		font-size: 24px;
 	}
 }
 
@@ -195,6 +196,10 @@ button:focus {
 		line-height: 100%;
 		width: 100%;
 		margin-bottom: 20px;
+
+		@media (max-width: $breakpoint-xs-max) {
+			font-size: 24px;
+		}
 	}
 
 	&__content {
@@ -210,10 +215,15 @@ button:focus {
 			justify-content: space-between;
 			margin: 0 auto;
 			padding: 75px 90px 90px;
-			width: 600px;
+			max-width: 600px;
+			width: 100%;
 
 			border: 2px solid $primary;
 			background-color: #fff;
+
+			@media (max-width: $breakpoint-xs-max) {
+				padding: 30px 20px 20px;
+			}
 		}
 
 		&-input {
@@ -229,6 +239,10 @@ button:focus {
 			&:focus label {
 				display: none;
 			}
+
+			@media (max-width: $breakpoint-xs-max) {
+				padding: 10px 10px;
+			}
 		}
 
 		&-input+&-input {
@@ -243,6 +257,10 @@ button:focus {
 
 			&:focus {
 				outline: 1px solid $dark;
+			}
+
+			@media (max-width: $breakpoint-xs-max) {
+				padding: 11px 20px;
 			}
 		}
 	}
